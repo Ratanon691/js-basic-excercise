@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+
+
+
+
+    <script>
+        function numberblock(n) {
+            let block = '';//declare block outside the loop will accumulate the value from previous loop/ Ex. in loops 2 block will have value of String(111), so it will take block = 111 into the second loop and so on
+            for (let row = 1; row <= n; row++) {
+            for (let column = 0; column < n; column++) {
+            block += row;
+            }
+            console.log(block);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>0</p>
+    <p>2</p>
+    <p>4</p>
+    <p>6</p>
+    <script>
+        function numbertower(n){
+            let block = ''
+            for(stack = 0 ; stack < (n * 3) - n ; stack+=2){//stack begin with 0 and increased by 2 every stack as long as it's less than (n*3)-n/ Ex. n = 3 it'll keep looping value of stack hit (3*3)-3 which is 6 and on the fourth loop stack will have value of 6 which is !< 6 so it'll stop looping
+                block = block + stack
+                console.log(stack)
+            }
+        }
+    </script>
+</body>
+</html>

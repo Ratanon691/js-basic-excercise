@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>***_</p>
+    <p>**_*</p>
+    <p>*_**</p>
+    <p>_***</p>
+
+    <script>
+            function printblock(n){
+                for(row = 1 ; row <= n ; row++){
+                    let block = ''
+                    for(col = 0 ; col < n ; col++){//use if to decide either print * or _ depend on position in column
+                        if(col === n-row){ // if the position in column = n - number of current row, print _ Ex. if n =4, in the first loop it'll print 3 block of * in position 1,2,3 then the forth loop of col, col has value of 3 (bc it started with 0) will equal to n(4) - row(1) so it'll print _ 
+                            block = block + '_ '
+                        }
+                        else{
+                            block = block + '* '//when the if condition above is false it will do this else command to print *
+                        }
+                        }
+                        console.log(block)
+                    }
+                }
+            
+    </script>
+</body>
+</html>

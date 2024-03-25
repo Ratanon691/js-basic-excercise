@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>1234</p>
+    <p>1234</p>
+    <p>1234</p>
+    <p>1234</p>
+    <script>
+        function numberblock(n){
+            let block = ""//block = empty place for number to take, assign block as a string bc each loop strings will concate together not addition bc they're not numbers
+            for(let column = 1 ; column <= n ; column++){ //bc the number we wanted to start with is 1 so column must start with 1
+                block += column//number of column take place of the block after each loop
+            }
+            for(let row = 0 ; row < n ; row ++){ //print row normally just like stars exercise
+                console.log(block)
+            }
+        }
+    </script>
+</body>
+</html>

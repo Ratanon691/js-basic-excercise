@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>1111</p>
+    <p>2222</p>
+    <p>3333</p>
+    <p>4444</p>
+    <script>
+        function numberblock(n) {
+            for (let row = 1; row <= n; row++) {//row is outer loop bc each column need row number so row must be declare first
+                let block = ''; //declare block inside the loop to reset and not accumulate the value from previous loops
+            for (let column = 1; column <= n; column++) {
+                block = block + row; //print column by using row number
+            }
+            console.log(block);//print block after column loop is done then restart the row loop
+            }
+        }
+
+    </script>
+</body>
+</html>

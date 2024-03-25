@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>_***</p>
+    <p>*_**</p>
+    <p>**_*</p>
+    <p>***_</p>
+
+    <script>
+            function printblock(n){
+                for(row = 1 ; row <= n ; row++){
+                    let block = ''
+                    for(col = 1 ; col <= n ; col++){//use if to decide either print * or _ depend on position in column
+                        if(row === col){ // if the position in column equal to the number of current row, it'll print _
+                            block = block + '_ '
+                        }
+                        else{
+                            block = block + '* '// if the position in column != numof current row, it'll print *
+                        }
+                        }
+                        console.log(block)
+                    }
+                }
+            
+    </script>
+</body>
+</html>

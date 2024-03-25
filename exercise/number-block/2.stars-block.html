@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            let star = ''
+            for(let column = 0 ; column < n ; column++){
+                star = star +'*' //loop to create designated number of column for a row
+            }  //in case n = 3, you will get *** after this loop is done
+            for(let row = 0 ; row < n ; row++)// after the loop above are done, you will get 3 rows in case n = 3
+            console.log(star) //this loop is for printing the designated number of row
+        }                     //repeatedly console.log the result from first loop (***) by 3 times in case n = 3
+    </script>
+</body>
+</html>

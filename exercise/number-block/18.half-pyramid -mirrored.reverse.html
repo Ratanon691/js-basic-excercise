@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>****</p>
+    <p>_***</p>
+    <p>__**</p>
+    <p>___*</p>
+
+    <script>
+        function halfpyramid(n){
+            for(row = 0 ; row < n ; row++){
+                let block = ''
+                for(col = 0 ; col < n ; col++){
+                    if(col <= row - 1){
+                        block += '_ '
+                    }
+                    else{
+                        block +='* '
+                    }
+                }
+                console.log(block)
+            }
+        }
+    </script>
+</body>
+</html>

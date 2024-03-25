@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>*___</p>
+    <p>**__</p>
+    <p>***_</p>
+    <p>****</p>
+    <p>***_</p>
+    <p>**__</p>
+    <p>*___</p>
+
+    <script>
+        function triangle(n){
+            for(row = 1 ; row <= (n * 2) -1 ; row++){ //have to start from 1, if start from 0 col loop won't print * still don't know why
+                let block = ''
+                for(col = 1 ; col <= n ; col++ ){
+                       if(row < n){
+                        if(col <= row){
+                            block += '* '
+                            }        
+                        else{
+                            block += '_ '
+                        }
+                        }
+                        else{
+                        if(col <= n * 2 - row ){//for the part that row > n starting reverse pattern
+                            block += '* '
+                        }
+                        else{
+                            block += '_ '
+                        }
+                        }
+                }
+                console.log(block)
+            }
+        }
+    </script>
+</body>
+</html>

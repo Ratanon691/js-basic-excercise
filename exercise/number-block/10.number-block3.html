@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 4</p>
+    <p>expected result:</p>
+    <p>123</p>
+    <p>246</p>
+    <p>369</p>
+    <p>481216</p>
+
+    <script>
+        function numberblock(n){
+            for(row = 1 ; row <= n ; row ++){//row ++ as usual
+                let block = ''
+                for(column = 0 ; column < n * row ; column += row){//we already have base value for each row from row so column need to be 0/ let it loop until it hit n * row/Ex. if n =3 in the first row it will loop until the value hit 3 and each loop the value increase by row value(the first line increase by 1 the second by 2 and so on)
+                    block = block + (row + column)
+                }
+                console.log(block)
+            }
+        }
+    </script>
+</body>
+</html>

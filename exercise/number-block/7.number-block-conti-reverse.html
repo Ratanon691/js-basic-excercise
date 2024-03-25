@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 3</p>
+    <p>expected result:</p>
+    <p>987</p>
+    <p>654</p>
+    <p>321</p>
+    <script>
+        function numberblock(n){
+            for(row = n * n ; row >= n ; row -= n){//we need the first number of first row = n^2 so row = n * n/ and as long as row >= n it'll keep looping and row value will decrase by n for each loop
+                let block = ''
+            for(column = 0 ; column < n ; column++){
+                block = block + (row - column)//we need reverse sequence so row - column
+            }
+                console.log(block)
+            }
+        }
+    </script>
+</body>
+</html>

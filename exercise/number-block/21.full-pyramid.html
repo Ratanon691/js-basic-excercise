@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>in case n = 3</p>
+    <p>expected result:</p>
+    <p>__*__</p>
+    <p>_***_</p>
+    <p>*****</p>
+
+    <script>
+        function pyramid(n){
+            for(row = 1 ; row <= n ; row++){
+                let block = ''
+                for(col = 1 ; col <= n + (n-1) ; col++){
+                    if(col < n){
+                        if(col < n - row +1){
+                            block += '_ '
+                        }
+                        else{
+                            block += '* '
+                        }
+                    }
+                    else{
+                        if(col - (n-1) <= row){
+                            block += '* '
+                        }
+                        else{
+                            block +='_ '
+                        }
+                    }
+
+                }
+            console.log(block)
+            }
+        }
+    </script>
+</body>
+</html>

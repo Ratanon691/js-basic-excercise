@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1 = Number(prompt(`You are player1 Give me a number between 0-100`))
+        while(true){
+            let p2 = Number(prompt(`You are player2, guess player1 number`))
+            if(p2 < p1){
+                alert(`pick a bigger number plz`)
+            }
+            else if(p2 > p1){
+                alert(`pick a smaller number plz`)
+            }
+            else{
+                break
+            }
+        }
+        alert(`Congrat, player 1 also picked${p1}`)
+        </script>
+</body>
+</html>
